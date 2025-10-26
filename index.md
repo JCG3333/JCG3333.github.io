@@ -1,0 +1,11 @@
+---
+layout: single
+title: 홈
+---
+
+# 👋 안녕하세요, 창근입니다.
+퍼블리싱 5년 경험과 AI 프로젝트를 결합해  
+**“실제 데이터로 판단하는 시스템”**을 개발해왔습니다.  
+
+- 🧠 [Projects](./projects)  
+- 🙋 [About Me](./about)
