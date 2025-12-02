@@ -1,7 +1,8 @@
 ---
-layout: single
 title: Projects
+layout: single
 ---
+
 
 # 🚀 주요 프로젝트
 
