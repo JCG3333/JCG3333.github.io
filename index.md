@@ -8,3 +8,6 @@ author_profile: true
 AI 자동매매, 감성분석, 클라우드 서비스 등 다양한 프로젝트를 이곳에 기록하고 있습니다.  
 
 > “단순한 코드 저장소가 아닌, 개발자의 생각과 성장을 담은 공간”
+
+- 🧠 [Projects](./projects)  
+- 🙋 [About Me](./about)
