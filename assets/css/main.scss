@@ -19,16 +19,52 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 프로젝트 카드 스타일 */
-.project-card {
-  border: 1px solid #e0e0e0;
-  padding: 16px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  background: #fafafa;
-  transition: box-shadow .2s;
+/* ===== 프로젝트 카드 레이아웃 ===== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
+/* 기본 카드 스타일 */
+.project-card {
+  border: 1px solid #e0e0e0;
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+
+  /* 애니메이션 기본 상태 (보이지 않게 시작) */
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity .4s ease-out,
+    transform .4s ease-out,
+    box-shadow .2s ease-out,
+    transform .2s ease-out;
+}
+
+/* 화면에 등장했을 때 붙여줄 클래스 */
+.project-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* hover 효과 (마우스 올렸을 때) */
 .project-card:hover {
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+}
+
+/* 카드 안 제목, 리스트 정리용 */
+.project-card h2,
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  margin: 0;
+  padding-left: 20px;
 }
