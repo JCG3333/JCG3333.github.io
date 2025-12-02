@@ -1,5 +1,15 @@
-/* 제목 색상 강조 */
-.page__title, h1, h2 {
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minimal-mistakes/skins/mint";  // 스킨 색상
+@import "minimal-mistakes";             // 기본 테마 CSS
+
+/* ===== 여기서부터는 내 커스텀 스타일 ===== */
+
+.page__title,
+h1,
+h2 {
   color: #00a896;
 }
 
@@ -9,7 +19,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 카드식 섹션 추가용 */
+/* 프로젝트 카드 스타일 */
 .project-card {
   border: 1px solid #e0e0e0;
   padding: 16px;

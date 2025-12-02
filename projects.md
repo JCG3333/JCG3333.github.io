@@ -6,6 +6,8 @@ permalink: /projects/
 
 # 🚀 Projects
 
+<div class="project-card">
+
 ## 1. 업비트 자동매매 시스템 (Upbit Auto Trader)
 
 - **설명:** 업비트 API 기반 실시간 자동매매 봇으로, 변동성 중심 전략과 조건형 규칙을 적용해 매수·매도 결정을 자동화했습니다.  
@@ -17,6 +19,10 @@ permalink: /projects/
   - TP/SL, 쿨다운, 시간대 제한 등 여러 전략 조합을 테스트  
 
 ---
+
+</div>
+
+<div class="project-card">
 
 ## 2. 감성분석 모델 개선 프로젝트 (Sentiment Rebuild)
 
@@ -32,6 +38,10 @@ permalink: /projects/
 
 ---
 
+</div>
+
+<div class="project-card">
+
 ## 3. AWS 클라우드 자동매매 이전 (AI Auto-Trader on AWS)
 
 - **설명:** Oracle Cloud VPS에서 돌아가던 자동매매 시스템을 AWS 환경으로 옮기면서  
@@ -44,6 +54,8 @@ permalink: /projects/
   - EventBridge로 스케줄 관리, 장애 발생 시 SNS+CloudWatch로 알림 예정  
 
 ---
+
+</div>
 
 ※ 각 프로젝트의 상세 코드는 정리 중이며, 정리되는 대로  
 GitHub 저장소 링크를 이 페이지에 순차적으로 추가할 예정입니다.
