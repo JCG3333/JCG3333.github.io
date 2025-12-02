@@ -1,6 +1,7 @@
 ---
 title: 라떼하우스
 layout: single
+permalink: /
 ---
 
 # 라떼하우스에 오신 걸 환영합니다 ☕

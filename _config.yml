@@ -14,13 +14,14 @@ plugins:
 baseurl: ""
 
 # 상단 메뉴
-header_pages:
-  - index.md
-  - projects.md
-  - about.md
+# header_pages:
+#   - index.md
+#   - projects.md
+#   - about.md
 
 # 기본 레이아웃
 defaults:
   - scope:
       path: ""
     values:
+      layout: single
