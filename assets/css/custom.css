@@ -67,6 +67,7 @@ body {
 
 .project-card .card-subtitle {
   font-size: 0.85rem;
+  color: #ffffff75 !important;
 }
 
 /* 태그 뱃지 */
@@ -143,4 +144,47 @@ body {
 /* 카드 숨김용 클래스 (필터 JS에서 사용) */
 .project-card-hidden {
   display: none !important;
+}
+
+
+/* ===== 프로젝트 디테일 페이지 ===== */
+.project-detail {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.project-detail-header p.text-xs {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+}
+
+.badge-tag {
+  font-size: 0.7rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-radius: 999px;
+}
+
+/* 본문 마크다운 스타일 조금 다듬기 */
+.project-detail-body p {
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.project-detail-body h2,
+.project-detail-body h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-detail-body code {
+  font-size: 0.9rem;
+}
+
+.project-detail-body pre {
+  background-color: #020617;
+  border-radius: 0.75rem;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+  border: 1px solid rgba(148, 163, 184, 0.3);
 }

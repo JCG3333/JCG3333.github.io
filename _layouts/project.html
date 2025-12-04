@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+  <header class="project-detail-header mb-4">
+    <p class="text-uppercase text-xs text-muted mb-1">
+      {{ page.category | upcase | default: "PROJECT" }}
+    </p>
+    <h1 class="text-light mb-2">{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="text-secondary mb-2">{{ page.subtitle }}</p>
+    {% endif %}
+
+    {% if page.tags %}
+      <div class="project-detail-tags mb-3">
+        {% for tag in page.tags %}
+          <span class="badge bg-secondary badge-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.repo or page.demo %}
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        {% if page.repo %}
+          <a href="{{ page.repo }}" class="btn-mdb" target="_blank">
+            GitHub Repo
+          </a>
+        {% endif %}
+        {% if page.demo %}
+          <a href="{{ page.demo }}" class="btn-mdb" target="_blank">
+            Live Demo
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </header>
+
+  <section class="project-detail-body mb-4">
+    {{ content }}
+  </section>
+
+  <footer class="project-detail-footer">
+    <a href="{{ '/' | relative_url }}" class="btn btn-outline-light btn-sm">
+      ← 목록으로 돌아가기
+    </a>
+  </footer>
+</article>
