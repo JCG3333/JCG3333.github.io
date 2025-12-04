@@ -2,6 +2,8 @@
 title: Projects
 layout: single
 permalink: /projects/
+scripts:
+  - /assets/js/projects.js
 ---
 
 # 🚀 Projects
