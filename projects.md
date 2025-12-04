@@ -38,24 +38,3 @@ scripts:
   </div>
 
 </div>
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const cards = document.querySelectorAll('.project-card');
-
-    // IntersectionObserver로 스크롤 감지
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('project-card--visible');
-          obs.unobserve(entry.target);  // 한 번 보인 카드는 다시 관찰 안 함
-        }
-      });
-    }, {
-      threshold: 0.2  // 카드의 20% 정도 보이면 애니메이션 시작
-    });
-
-    cards.forEach(card => observer.observe(card));
-  });
-</script>
