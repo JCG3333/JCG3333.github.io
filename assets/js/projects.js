@@ -19,4 +19,5 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   cards.forEach(card => observer.observe(card));
+  console.log("테스트")
 });
