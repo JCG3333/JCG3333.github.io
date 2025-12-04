@@ -26,8 +26,6 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
-
-/* 기본 카드 스타일 */
 .project-card {
   border: 1px solid #e0e0e0;
   padding: 18px 20px;
@@ -35,7 +33,6 @@ a:hover {
   background: #fafafa;
   box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 
-  /* 애니메이션 기본 상태 (보이지 않게 시작) */
   opacity: 0;
   transform: translateY(16px);
   transition:
@@ -45,7 +42,7 @@ a:hover {
     transform .2s ease-out;
 }
 
-/* 화면에 등장했을 때 붙여줄 클래스 */
+/* JS가 이 클래스를 붙여줄 거야 */
 .project-card--visible {
   opacity: 1;
   transform: translateY(0);
