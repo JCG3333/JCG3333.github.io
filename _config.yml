@@ -25,3 +25,7 @@ defaults:
       path: ""
     values:
       layout: single
+
+# 사이트 공통으로 불러올 JS
+head_scripts:
+  - /assets/js/projects.js
