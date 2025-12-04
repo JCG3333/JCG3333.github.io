@@ -1,0 +1,35 @@
+/* 기본 배경, 폰트, 카드 느낌 정도만 살짝 입히자 */
+body {
+  background-color: #0f172a; /* 진한 남색 느낌 */
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* 메인 타이틀 영역 */
+.page-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* 카드 공통 스타일 */
+.project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, translate 0.2s ease;
+  border-radius: 1rem;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* 태그 뱃지 */
+.tech-badge {
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
