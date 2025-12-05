@@ -20,27 +20,27 @@ title: "포트폴리오"
 
 <div class="row g-4">
   <!-- 프로젝트 카드 1 : Web -->
-    <div class="col-12 col-md-6 col-lg-4">
+  <div class="col-12 col-md-6 col-lg-4">
     <div class="card text-light project-card h-100" data-category="web">
-        <div class="card-body d-flex flex-column">
+      <div class="card-body d-flex flex-column">
         <h5 class="card-title mb-2">GitHub Pages 포트폴리오</h5>
         <h6 class="card-subtitle mb-3 text-muted">Jekyll + Bootstrap</h6>
         <p class="card-text flex-grow-1">
-            Jekyll 기반 GitHub Pages에 Bootstrap과 커스텀 CSS/JS를 적용하여,
-            교수님 과제용 포트폴리오 페이지를 구성한 프로젝트입니다.
+          Jekyll 기반 GitHub Pages에 Bootstrap과 커스텀 CSS/JS를 적용하여,
+          교수님 과제용 포트폴리오 페이지를 구성한 프로젝트입니다.
         </p>
         <div class="mt-2 mb-3">
-            <span class="badge bg-primary tech-badge">HTML</span>
-            <span class="badge bg-info tech-badge">CSS</span>
-            <span class="badge bg-warning text-dark tech-badge">JavaScript</span>
-            <span class="badge bg-success tech-badge">Bootstrap 5</span>
+          <span class="badge bg-primary tech-badge">HTML</span>
+          <span class="badge bg-info tech-badge">CSS</span>
+          <span class="badge bg-warning text-dark tech-badge">JavaScript</span>
+          <span class="badge bg-success tech-badge">Bootstrap 5</span>
         </div>
         <a href="{{ '/projects/github-portfolio' | relative_url }}" class="btn-mdb mt-auto">
-            상세 보기
+          상세 보기
         </a>
-        </div>
+      </div>
     </div>
-    </div>
+  </div>
 
 
   <!-- 프로젝트 카드 2 : Game -->

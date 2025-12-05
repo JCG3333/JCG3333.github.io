@@ -9,8 +9,8 @@ tags:
   - Bootstrap 5
   - JavaScript
   - GitHub Pages
-repo: "https://github.com/네-레포-주소"
-demo: "https://네-아이디.github.io/레포이름/"
+repo: "https://github.com/JCG3333/"
+demo: "https://jcg3333.github.io/"
 ---
 
 ## 개요
