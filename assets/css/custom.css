@@ -188,3 +188,24 @@ body {
   overflow-x: auto;
   border: 1px solid rgba(148, 163, 184, 0.3);
 }
+
+/* ===== 프로젝트 갤러리(캐러셀) ===== */
+.project-gallery {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.project-gallery .carousel-inner {
+  border-radius: 1.5rem;
+}
+
+.project-gallery-image {
+  object-fit: cover;
+  max-height: 420px; /* 높이 제한: 필요에 따라 조정 가능 */
+}
+
+/* 컨트롤 화살표 약간 튜닝하고 싶으면 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
+}

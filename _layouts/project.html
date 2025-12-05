@@ -20,21 +20,59 @@ layout: default
       </div>
     {% endif %}
 
-    {% if page.repo or page.demo %}
+    {% if page.repo %}
       <div class="d-flex flex-wrap gap-2 mb-3">
-        {% if page.repo %}
-          <a href="{{ page.repo }}" class="btn-mdb" target="_blank">
-            GitHub Repo
-          </a>
-        {% endif %}
-        {% if page.demo %}
-          <a href="{{ page.demo }}" class="btn-mdb" target="_blank">
-            Live Demo
-          </a>
-        {% endif %}
+        <a href="{{ page.repo }}" class="btn-mdb" target="_blank">
+          GitHub Repo
+        </a>
       </div>
     {% endif %}
   </header>
+
+  {%- comment -%}
+  ✅ 갤러리(이미지 슬라이드) – page.gallery 가 있을 때만 표시
+  {%- endcomment -%}
+  {% if page.gallery %}
+    {% assign carousel_id = page.title | slugify | prepend: "project-gallery-" %}
+
+    <section class="project-gallery mb-4">
+      <div id="{{ carousel_id }}" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- 인디케이터 (동그라미 버튼) -->
+        <div class="carousel-indicators">
+          {% for item in page.gallery %}
+            <button type="button"
+                    data-bs-target="#{{ carousel_id }}"
+                    data-bs-slide-to="{{ forloop.index0 }}"
+                    class="{% if forloop.first %}active{% endif %}"
+                    {% if forloop.first %}aria-current="true"{% endif %}
+                    aria-label="Slide {{ forloop.index }}"></button>
+          {% endfor %}
+        </div>
+
+        <!-- 실제 슬라이드 이미지들 -->
+        <div class="carousel-inner rounded-4 overflow-hidden shadow-lg">
+          {% for item in page.gallery %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <img src="{{ item.src | relative_url }}"
+                   class="d-block w-100 project-gallery-image"
+                   alt="{{ item.alt | default: page.title }}">
+            </div>
+          {% endfor %}
+        </div>
+
+        <!-- 이전/다음 컨트롤 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#{{ carousel_id }}" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  {% endif %}
 
   <section class="project-detail-body mb-4">
     {{ content }}

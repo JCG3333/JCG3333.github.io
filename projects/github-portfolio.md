@@ -11,6 +11,18 @@ tags:
   - GitHub Pages
 repo: "https://github.com/JCG3333/"
 demo: "https://jcg3333.github.io/"
+
+gallery:
+  - src: "/assets/img/projects/github-portfolio/1.png"
+    alt: "GitHub Pages 포트폴리오 메인 화면"
+  - src: "/assets/img/projects/github-portfolio/2.png"
+    alt: "프로젝트 카드 리스트 화면"
+  - src: "/assets/img/projects/github-portfolio/3.png"
+    alt: "프로젝트 상세 페이지 화면"
+  - src: "/assets/img/projects/github-portfolio/4.png"
+    alt: "카테고리 필터 기능 데모"
+  - src: "/assets/img/projects/github-portfolio/5.png"
+    alt: "리플 이펙트와 버튼 디자인"
 ---
 
 ## 개요
