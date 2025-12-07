@@ -54,7 +54,7 @@ a:hover {
 
 .page-root {
   max-width: 100%;
-  margin: 32px auto 80px;
+  margin: 48px auto 80px;
   padding: 0 0;
 }
 
@@ -67,8 +67,9 @@ a:hover {
   margin-bottom: 24px;
 
   border: 1px solid rgba(15, 23, 42, 0.04);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08); /* 기존 0 18px 40px에서 줄임 */
 }
+
 
 .section-card h1,
 .section-card h2,

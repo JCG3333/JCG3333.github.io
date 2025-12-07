@@ -6,7 +6,7 @@ title: Home
 <!-- Hero Section -->
 <section class="hero">
   <div class="hero-inner">
-    <h1>JCG3333</h1>
+    <h1>지창근</h1>
     <p>서울사이버대학교 빅데이터·정보보호학과 재학생</p>
   </div>
 </section>
