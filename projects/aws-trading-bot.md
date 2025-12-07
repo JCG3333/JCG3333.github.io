@@ -11,7 +11,9 @@ systemd 기반의 서비스 등록, 자동 실행 & 재시작, 로그 출력, �
 <div class="video-card">
   <iframe src="https://www.youtube.com/embed/pmsE48ILmZE"
     frameborder="0"
-    allowfullscreen></iframe>
+    allowfullscreen
+    width="100%"
+    height="500px"></iframe>
 </div>
 
 ### 개요
@@ -20,7 +22,7 @@ AWS EC2 환경에서 더미 자동매매 봇을 지속적으로 운영하기 위
 별도로 뉴스 데이터 기반 감성 분석 모델을 실행하여 데이터를 지속적으로 수집·축적하고 있습니다.
 
 두 시스템은 독립적으로 동작하지만,  
-“작은 기능을 안정적으로 돌리고, 데이터를 꾸준히 쌓아 나가는 경험”이라는 공통된 목적을 가지고 있습니다.
+“작은 기능을 안정적으로 돌리고, 데이터를 꾸준히 쌓아 나가는 경험”이라는 공통된 목적을 가지고 있습니다.  
 
 ---
 

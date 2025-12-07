@@ -54,6 +54,9 @@ title: Home
       <article class="learning-card">
         <h3>Git / GitHub</h3>
         <p>버전 관리와 원격 저장소를 이용해 작은 프로젝트의 이력을 관리해 보았습니다.</p>
+        <a class="card-btn" href="https://github.com/JCG3333/JCG3333.github.io" target="_blank">
+          GitHub 바로가기 →
+        </a>
       </article>
 
       <article class="learning-card">

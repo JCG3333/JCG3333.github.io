@@ -250,3 +250,25 @@ a:hover {
     flex: 1;
   }
 }
+
+.card-btn {
+  display: inline-block;
+  margin-top: 10px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 14px;
+
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.card-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
