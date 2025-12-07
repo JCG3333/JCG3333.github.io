@@ -238,3 +238,139 @@ p {
 a {
   color: #0077cc;
 }
+
+
+.page-root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+/* 섹션 카드 기본 스타일 */
+.section-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.section-card h1,
+.section-card h2,
+.section-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.section-card p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* 태그 느낌의 스킬 표시 */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+/* 리스트 정리 */
+.clean-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0;
+}
+
+.clean-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.clean-list li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  color: #9ca3af;
+}
+
+.clean-list.small li {
+  font-size: 0.9rem;
+}
+
+/* 작은 메모 텍스트 */
+.note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 12px;
+}
+
+/* 프로젝트 카드 */
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-radius: 12px;
+  padding: 18px 16px;
+  background: #f9fafb;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.project-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.project-body h3 {
+  margin: 0 0 8px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 조금만 보정 */
+@media (min-width: 768px) {
+  .project-card {
+    flex-direction: row;
+  }
+
+  .project-thumbnail {
+    flex: 0 0 260px;
+  }
+
+  .project-body {
+    flex: 1;
+  }
+}
