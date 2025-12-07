@@ -1,9 +1,10 @@
 /* ===== 전체 배경 & 기본 폰트 ===== */
 body {
-  background: radial-gradient(circle at top left, #1f2937 0, #020617 50%, #000 100%);
+  background: radial-gradient(circle at top left, #020617 0, #020617 55%, #020617 100%);
   color: #e5e7eb;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
+
 
 /* ===== 페이지 헤더 ===== */
 .page-header {
@@ -390,4 +391,99 @@ a {
   height: 100%;
   border:0;
   border-radius: 12px;
+}
+
+/* ===== INDEX 카드 스타일 리셋 ===== */
+
+/* 전체 레이아웃 정리 */
+.page-root {
+  max-width: 960px;
+  margin: 40px auto 80px;
+  padding: 0 16px;
+}
+
+/* 섹션 카드 공통 */
+.section-card {
+  background: rgba(248, 250, 252, 0.98); /* 거의 흰색 */
+  border-radius: 18px;
+  padding: 28px 24px;
+  margin-bottom: 24px;
+
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+  border: 1px solid rgba(15, 23, 42, 0.04);
+
+  /* 카드 안에서는 글자 진하게 */
+  color: #111827;
+}
+
+/* 제목들 – 너무 크지 않게, 선명하게 */
+.section-card h1,
+.section-card h2,
+.section-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.section-card h1 {
+  font-size: 1.4rem;
+}
+
+.section-card h2 {
+  font-size: 1.2rem;
+}
+
+/* 본문 텍스트 */
+.section-card p,
+.section-card li {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #111827;
+  opacity: 0.95; /* 아주 살짝만 부드럽게 */
+}
+
+/* 리스트 점 커스텀 */
+.section-card ul {
+  padding-left: 1.1rem;
+  margin: 0.4rem 0;
+}
+
+.section-card li {
+  margin-bottom: 0.2rem;
+}
+
+/* 스킬 pill 태그들 재정리 */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 4px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+/* 작은 부가 설명 */
+.section-card .note {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: #6b7280;
+}
+
+/* 링크 색상 통일 */
+.section-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.section-card a:hover {
+  text-decoration: underline;
 }
