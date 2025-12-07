@@ -8,8 +8,11 @@ title: AWS 기반 자동매매 봇 + 감성 분석 시스템
 AWS EC2 환경에서 더미 자동매매 봇 및 감성 분석 시스템이 실제로 작동하는 과정을 기록한 영상입니다.  
 systemd 기반의 서비스 등록, 자동 실행 & 재시작, 로그 출력, 데이터 수집 흐름 등을 확인할 수 있습니다.
 
-[![프로젝트 데모 영상](https://img.youtube.com/vi/pmsE48ILmZE/hqdefault.jpg)](https://www.youtube.com/watch?v=pmsE48ILmZE)
-
+<div class="video-card">
+  <iframe src="https://www.youtube.com/embed/pmsE48ILmZE"
+    frameborder="0"
+    allowfullscreen></iframe>
+</div>
 
 ### 개요
 
