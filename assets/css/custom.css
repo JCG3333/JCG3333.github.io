@@ -64,7 +64,7 @@ a:hover {
   background: #f9fafb;
   border-radius: 18px;
   padding: 28px 24px;
-  margin-bottom: 24px;
+  margin-bottom: 54px;
 
   border: 1px solid rgba(15, 23, 42, 0.04);
   box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08); /* 기존 0 18px 40px에서 줄임 */
