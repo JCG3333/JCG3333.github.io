@@ -79,9 +79,7 @@ title: Home
   <h2>Contact</h2>
   <p>간단한 피드백이나 문의는 아래 경로로 받아보고 있습니다.</p>
   <ul class="clean-list">
-    <li>GitHub: <a href="https://github.com/JCG3333" target="_blank">https://github.com/JCG3333</a></li>
-    <!-- 필요하면 이메일 추가 -->
-    <!-- <li>Email: example@example.com</li> -->
+    <li>Email: wlckdrms94@gmail.com</li>
   </ul>
 </section>
 
