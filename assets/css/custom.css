@@ -53,9 +53,9 @@ a:hover {
 /* ===== 메인 컨테이너 ===== */
 
 .page-root {
-  max-width: 960px;
+  max-width: 100%;
   margin: 32px auto 80px;
-  padding: 0 16px;
+  padding: 0 0;
 }
 
 /* ===== 공통 카드 ===== */
@@ -141,7 +141,7 @@ a:hover {
 
 .learning-card {
   flex: 1 1 260px;
-  max-width: 300px;
+  max-width: 100%;
   background: #f9fafb;
   border-radius: 16px;
   padding: 24px 20px;
