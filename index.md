@@ -1,88 +1,87 @@
 ---
 layout: default
-title: "포트폴리오"
+title: Home
 ---
 
-<div class="page-header">
-  <h1 class="text-light">My Projects</h1>
-  <p class="text-secondary">
-    GitHub Pages + Bootstrap + MDB 스타일 감성 포트폴리오
+# 👋 About Me
+
+안녕하세요. 관심 있는 기술을 배우면 직접 만들어보고, 만들면 개선하고 싶은 타입입니다.  
+데이터 처리, 자동화, 간단한 웹 서비스 구성 등 여러 시도를 해보며 배우고 있습니다.  
+완성도가 높지 않은 결과물도 많지만, 시행착오를 겪으며 하나씩 나아지는 과정이 재미있습니다.  
+기술을 빠르게 따라가는 것보다, 원리를 이해하고 스스로 적용해보는 것을 더 중요하게 생각합니다.  
+앞으로도 흥미 있는 주제를 직접 탐구하고, 작은 결과물이라도 남기면서 성장하고 싶습니다.
+
+
+<br>
+
+---
+
+# 🛠️ Skills
+
+현재 학습하고 있는 기술과 관심 있는 분야입니다.
+
+- **언어**: Python, JavaScript  
+- **웹**: HTML, CSS, 간단한 웹 페이지 구성  
+- **데이터 처리**: 간단한 데이터 수집/정제/분석  
+- **자동화 시스템**: 간단한 스크립트 기반 자동화  
+- **기타**: Git / GitHub 기본 사용  
+
+> 완벽히 익힌 기술보다,  
+> "필요한 기능을 직접 만들 수 있는 능력"을 키우는 데 집중하고 있습니다.
+
+
+<br>
+
+---
+
+# 📚 Learning
+
+수업 및 개인 학습을 통해 경험한 내용입니다.
+
+- Git / GitHub를 사용한 버전 관리  
+- HTML / CSS / JavaScript 기본 구성  
+- 간단한 웹 서비스 제작 및 배포  
+- 프로젝트 진행 과정 정리 및 기록  
+- 포트폴리오 웹사이트 구축  
+
+> 학습한 내용을 바로 실습해보며  
+> 결과물로 정리하는 방식을 선호합니다.
+
+
+<br>
+
+---
+
+# 🚀 Projects
+
+학습 과정에서 진행한 작은 프로젝트들입니다.  
+아직 완성도가 높진 않지만, 배운 내용을 실험하고 기록하기 위한 목적이 큽니다.
+
+
+## 📌 GitHub Portfolio Web
+
+<div class="project-card">
+  <img src="assets/img/projects/github-portfolio/1.png" alt="portfolio image" style="width:100%; border-radius:8px;">
+  <p>
+  GitHub Pages와 커스텀 CSS를 활용해 포트폴리오 웹 사이트를 구성해보았습니다.  
+  Jekyll 템플릿을 활용해 레이아웃을 분리하고, 간단한 프로젝트 카드 UI를 구현했습니다.
   </p>
+  <a href="/projects/github-portfolio" style="text-decoration:none; font-weight:bold;">자세히 보기 →</a>
 </div>
 
-<!-- 🔎 카테고리 필터 바 -->
-<div class="filter-bar">
-  <button class="filter-btn active" data-filter="all">ALL</button>
-  <button class="filter-btn" data-filter="web">WEB</button>
-  <button class="filter-btn" data-filter="game">GAME</button>
-  <button class="filter-btn" data-filter="data">DATA</button>
-</div>
+<br>
 
-<div class="row g-4">
-  <!-- 프로젝트 카드 1 : Web -->
-  <div class="col-12 col-md-6 col-lg-4">
-    <div class="card text-light project-card h-100" data-category="web">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-2">GitHub Pages 포트폴리오</h5>
-        <h6 class="card-subtitle mb-3 text-muted">Jekyll + Bootstrap</h6>
-        <p class="card-text flex-grow-1">
-          Jekyll 기반 GitHub Pages에 Bootstrap과 커스텀 CSS/JS를 적용하여,
-          교수님 과제용 포트폴리오 페이지를 구성한 프로젝트입니다.
-        </p>
-        <div class="mt-2 mb-3">
-          <span class="badge bg-primary tech-badge">HTML</span>
-          <span class="badge bg-info tech-badge">CSS</span>
-          <span class="badge bg-warning text-dark tech-badge">JavaScript</span>
-          <span class="badge bg-success tech-badge">Bootstrap 5</span>
-        </div>
-        <a href="{{ '/projects/github-portfolio' | relative_url }}" class="btn-mdb mt-auto">
-          상세 보기
-        </a>
-      </div>
-    </div>
-  </div>
+> 프로젝트는 계속 확장하고 있으며, 필요할 때마다 개선 중입니다.
 
 
-  <!-- 프로젝트 카드 2 : Game -->
-  <div class="col-12 col-md-6 col-lg-4">
-    <div class="card text-light project-card h-100" data-category="game">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-2">게임 관련 프로젝트</h5>
-        <h6 class="card-subtitle mb-3 text-muted">Albion / LAN드스케이프</h6>
-        <p class="card-text flex-grow-1">
-          게임 시스템 분석, 장비 티어 구조, 혹은 LAN 기반 세계관을 정리한
-          개인 프로젝트를 소개하는 슬롯입니다.
-        </p>
-        <div class="mt-2 mb-3">
-          <span class="badge bg-secondary tech-badge">Game Design</span>
-          <span class="badge bg-danger tech-badge">System</span>
-        </div>
-        <a href="#" class="btn-mdb mt-auto">
-          자세히 보기
-        </a>
-      </div>
-    </div>
-  </div>
+<br>
 
-  <!-- 프로젝트 카드 3 : Data -->
-  <div class="col-12 col-md-6 col-lg-4">
-    <div class="card text-light project-card h-100" data-category="data">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-2">자동매매 / 데이터 분석</h5>
-        <h6 class="card-subtitle mb-3 text-muted">Python / ML / Backtest</h6>
-        <p class="card-text flex-grow-1">
-          크립토 자동매매, 빅데이터 분석기사 공부, ML 기반 전략 테스트 등
-          데이터 분석 관련 프로젝트를 모아두는 공간입니다.
-        </p>
-        <div class="mt-2 mb-3">
-          <span class="badge bg-info tech-badge">Python</span>
-          <span class="badge bg-success tech-badge">Machine Learning</span>
-          <span class="badge bg-primary tech-badge">Backtest</span>
-        </div>
-        <a href="#" class="btn-mdb mt-auto">
-          상세 문서
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+---
+
+# 📞 Contact
+
+궁금한 점이나 피드백이 있다면 편하게 연락 주세요.
+
+- GitHub: [https://github.com/yourname](https://github.com/yourname)
+- Email: youremail@example.com
+

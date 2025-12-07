@@ -209,3 +209,32 @@ body {
 .carousel-control-next-icon {
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
 }
+
+section, .project-card {
+  margin-bottom: 60px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.project-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.project-card img {
+  margin-bottom: 16px;
+}
+
+a {
+  color: #0077cc;
+}
